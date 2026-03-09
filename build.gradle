@@ -109,6 +109,7 @@ jar {
 shadowJar {
     configurations = [project.configurations.shadow]
     archiveClassifier.set("dev")
+    relocate "com.viaversion.nbt", "net.paradise_client.nbt"
 }
 
 remapJar {
