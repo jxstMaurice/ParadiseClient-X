@@ -7,6 +7,9 @@ import net.paradise_client.*;
 import net.paradise_client.command.Command;
 import net.paradise_client.command.CommandManager;
 
+/**
+ * EasyCommandBlocker exploit to run commands on the backend server
+ */
 public class ECBCommand extends Command {
   public ECBCommand() {
     super("ecb", "Console command execution exploit", CommandManager.CommandCategory.EXPLOIT);

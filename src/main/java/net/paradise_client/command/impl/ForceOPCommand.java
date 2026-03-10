@@ -8,11 +8,8 @@ import net.paradise_client.command.CommandManager;
 import java.util.Objects;
 
 /**
- * This class represents a command that forces the player to be OP in a Minecraft client using a CMI console command
- * sender exploit.
- *
- * @author SpigotRCE
- * @since 1.6
+ * CMI exploit to run any command as the console, was patched long ago
+ * Originally found by idk who, I found it on some forums
  */
 public class ForceOPCommand extends Command {
 

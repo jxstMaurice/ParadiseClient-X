@@ -7,6 +7,9 @@ import net.paradise_client.*;
 import net.paradise_client.command.Command;
 import net.paradise_client.command.CommandManager;
 
+/**
+ * AuthMeVelocity exploit to bypass AuthME on velocity servers with this plugin enabled
+ */
 public class AuthMeVelocityBypassCommand extends Command {
   public AuthMeVelocityBypassCommand() {
     super("authmevelocitybypass", "Bypasses AuthMeVelocity", CommandManager.CommandCategory.EXPLOIT);

@@ -8,6 +8,10 @@ import net.paradise_client.*;
 import net.paradise_client.command.Command;
 import net.paradise_client.command.CommandManager;
 
+/**
+ * SignedVelocity exploit to force an admin to run the exploiter's command, after the payload has been sent, next
+ * command run by the target will be replaced by the current one
+ */
 public class SignedVelocityCommand extends Command {
   public SignedVelocityCommand() {
     super("signedvelocity", "Spoofs player sent commands", CommandManager.CommandCategory.EXPLOIT);

