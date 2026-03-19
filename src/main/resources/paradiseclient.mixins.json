@@ -17,6 +17,8 @@
     "gui.PressableWidgetMixin",
     "gui.RotatingCubeMapRendererMixin",
     "gui.screen.ButtonWidgetAccessor",
+    "gui.screen.AddServerScreenMixin",
+    "gui.screen.DirectConnectScreenMixin",
     "gui.screen.MultiplayerScreenMixin",
     "gui.screen.ScreenMixin",
     "gui.screen.TitleScreenMixin",
